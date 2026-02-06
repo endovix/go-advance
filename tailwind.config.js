@@ -1,0 +1,20 @@
+const { color } = require('framer-motion');
+const { col } = require('framer-motion/client');
+const { text } = require('stream/consumers');
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./index.html",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "Arial", "Helvetica", "sans-serif"],
+        "abc-favorit": ["var(--font-abc-favorit)", "Arial", "Helvetica", "sans-serif"],
+      }
+    },
+    plugins: [],
+  }
+};
